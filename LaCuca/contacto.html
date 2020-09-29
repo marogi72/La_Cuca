@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <time>Granja la Cuca</time>
+
+    <link rel="stylesheet" href="/CSS/estilo.css">
+    <link href ="https://fonts.googleapis.com/css2? family=Indie+Flower&family=Lato&family=Oswald&family=Raleway&family=Roboto&display=swap" rel = "stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Granja la Cuca</h1>
+        </div>
+
+        <div class="sidebar">
+            <nav class="nav">
+                <ul>
+                <li> <a  href="index.html">Inicio</a></li>
+                    <li> <a  href="productos.html">Productos</a></li>
+                    <li> <a  href="recetas.html">Recetas</a></li>
+                    <li> <a href="contacto.html">Contacto</a></li>
+                    <li> <a  href="Precios.html">Precios</a></li>
+                </ul>
+            </nav>    
+            
+        </div>
+
+        <div class="content">
+            <section>
+        
+        <form clase="contacto">
+            <title>Gracias por comunicarse con Granja La Cuca</title>
+            <div class="formulario">
+                <h2 id= "tit" >Dejanos Tus Datos</h2>
+                 <div clas="cliente">
+                    <p>Nombre :  <input class="casillero" type="text" name="Nombre" value="" placeholder="Carlos" required/></p>
+                    <p>Apellido :   <input class="casillero" type="text" name="Apellido" value="" placeholder="Perez" required/></p>
+                    <p>Telefono:  <input class="casillero" type="tel"placeholder="0303-456" required/></p>
+                    <p>Correo Electronico:   <input class="casillero" type="email" required></p>
+                </div>
+                <div class="pedido">
+
+                    <p>Pedido:
+                        <textarea name="Pedido" placeholder="detalle los productos que decea comprar" required>              
+                        </textarea>
+                    </p>
+                            
+                    <p>Envio:
+                        <input type="radio" name="conEnvio" value="S" /> SI
+                        <input type="radio" name="conEnvio" value="N" /> NO
+                    </p>
+                    <p>Domicilio: <p>
+                    <!-- Lista de selección -->
+                    <p>Selecciona la forma de pago:<p>
+                        <select name="combo">
+                            <!-- Opciones de la lista -->
+                            <option value="1" selected>Efectivo</option><!-- Opción por defecto -->
+                            <option value="2" >Debito</option> 
+                            <option value="3">credito</option>
+                            <option value="4">Mercado pago</option>
+                        </select>
+                    <p>Día de entrega </p><input type="date" name="fecha" min="2018-03-25" max="2022-05-25" step="2" /></p>
+                </div>
+               
+                           
+                <div class="botonFormulario">
+                    <!-- Botón de reseteo de formulario -->
+                    <input clase="borrar" type="reset" value="Borrar formulario" />
+                    <!-- Botón de envío del formulario -->
+                    <input clase="ok" type="submit" value="Enviar" />   
+                </div>
+
+    
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!3m2!1ses-419!2sar!4v1601159644580!5m2!1ses-419!2sar!6m8!1m7!1sIu1A6792nyPzOjdqk5p--Q!2m2!1d-34.84681796575882!2d-58.37626256375783!3f207.0819187848184!4f1.991225564192959!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+        
+            </div>     
+        </form>
+            
+    </section>
+            
+</div>
+
+            <div class="footer">
+                <footer>
+                   <spam>Creado y mantenido por <a href="https://twitter.com/dolcecuore8"target="_blank">@dolcecuore8</a> con <span class="❤"><span class="fas fa-heart"></span></span>
+                        
+                <div>    
+                    <span> <a href="https://www.facebook.com/PolloElAbuelo"target="_blank"><i class="fab fa-facebook-square"></i></span>
+                    <span> <a href="https://www.linkedin.com/in/marina-rosa-giacoboni"target="_blank"><i class="fab fa-linkedin"></i></span> 
+                    <span> <a href="https://twitter.com/dolcecuore8"target="_blank"><i class="fab fa-twitter"></i></span>
+                </div>    
+            
+                </footer>
+            </div>
+
+
+      </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,371 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+
+*{
+   box-sizing: border-box;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "h h h"
+                        "s c c"
+                        "s f f";  
+    justify-items: stretch;
+    justify-content: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    
+}
+
+.header {
+    grid-area: h ;
+    background-image: url(/imagenes/adobo-pollo-pavo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover , contain;
+    font-family: 'Indie Flower', cursiva;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: black 5px 5px 25px;
+    text-shadow:       
+    2px 2px 1px #AAA,
+    6px 6px 2px rgb(214, 62, 24),
+    15px 15px 10px rgb(3, 0, 0);
+    width: 100%;
+    }
+  
+.sidebar {
+    grid-area: s;
+    background-color: rgb(31, 32, 32);
+    font-family: 'Indie Flower', cursiva;
+    font-size: 2rem;
+    width: 100%;
+    
+    }
+  
+.content {
+    grid-area: c;
+    text-align: center;
+    font-size: 3rem; 
+    font-family: 'Indie Flower', cursiva; 
+    background-image: linear-gradient( rgb(236, 143, 3), rgb(222, 236, 17));
+    width: 100%;   
+}
+  
+.footer {
+    grid-area: f;
+    background: green;
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.nav{
+    font-size: 3rem;
+    color: indigo;
+    text-align: center;
+    text-shadow:  2px 2px 1px #AAA;
+    display: block;
+    height: 100%;
+}
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+    height: 100%;
+    display: block;
+  }
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li a{
+    text-decoration: none;
+    
+}
+
+a {
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+a:visited {
+    color: rgb(230, 92, 13);
+}
+
+
+ .desvorde{
+    overflow: auto;
+ }
+
+ h1{
+     font-size:  10rem;
+ }
+
+ h2{
+     font-size: 4rem;
+ }
+
+ p{
+     font-size: 2rem;
+     text-align:left ;
+ }
+
+
+ .fa-heart:hover{
+    background-color: red;
+    animation-name: iconos;
+    animation-duration: 4s;
+    }
+
+
+@keyframes iconos{
+0%   {background-color: red;
+    font-size: 5rem;}
+25%  {background-color: yellow;
+    font-size: 5rem;}
+50%  {background-color: blue;
+    font-size: 5rem;}
+100% {background-color: green;
+    font-size: 5rem;}
+}
+
+
+ i{
+    color: rgb(3, 0, 0);
+    font-size: 4rem;
+    background: none;
+ }
+
+ i:hover{
+    color: cyan;
+    font-size: 5rem;
+    
+ }
+
+ .contacto {
+    display: grid;
+    justify-items: stretch;
+    justify-content: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    font-family: cursive;
+    width: 100%;
+   
+ }
+
+ .formulario{
+    text-align: justify;
+    padding-left: 2rem;
+    width: 100%;
+    
+ }
+ 
+#tit {
+    text-align: center;
+}
+ .cliente{
+     width: 100%;
+     box-sizing: border-box;
+     box-align: ;
+
+ }
+
+ .pedido{
+     width: 100%;
+     box-sizing: border-box;
+     box-align:left;
+     resize: none;
+    
+ }
+
+
+textarea{
+       
+        width: 100%;
+        height: 15rem;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+
+
+
+}
+
+
+
+ input[type=text], [type=tel], [type=email], [type=date] , select {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+ input[type=submit] {
+    background-color: #4CAF50;
+    height: 5rem;
+    width: 15rem;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+ 
+         }
+
+  input[type=reset] {
+    background-color: #ee0606;
+    height: 5rem;
+    width: 15rem;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+/*estilo de galareia*/
+
+div.gallery {
+    border: 1px solid #ccc;
+    width: 30rem ;
+    height: 30rem;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 20rem;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  div.galleryReceta {
+    border: 1px solid #ccc;
+    width: 30rem ;
+    height: 60rem;
+  }
+  
+  div.galleryReceta img {
+    width: 100%;
+    height: 20rem;
+  }
+
+
+  div.receta {
+    padding: 15px;
+    text-align: left;
+  }
+
+   .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+.pie{
+    padding: 15px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+
+
+/*estilo Tabla*/
+
+#tabla {
+    font-family: 'Indie Flower', cursiva;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  #tabla caption{
+
+    font-size: 8rem;
+  }
+  
+  #tabla tr, #tabla th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #tabla tr:nth-child(even){background-color: #f2f2f2;}
+  
+ 
+  
+  #tabla th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For mobile phones: */
+/* For tablets: */
+  @media only screen and (max-width: 640px) {
+
+    .container {
+        grid-template-areas: "h h h"
+                             " s s s"
+                             " c c c"
+                             "f f f" ;
+    }
+}
